@@ -1,34 +1,35 @@
 package com.company;
-
 import javax.swing.*;
 
 import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class PositionSquare {
+public class CenterBoxFunction {
 
-  public static void mainDraw(Graphics graphics) {
-    // create a square drawing function that takes 2 parameters:
-    // the x and y coordinates of the square's top left corner
-    // and draws a 50x50 square from that point.
+  public static void mainDraw(Graphics graphics){
+    // create a square drawing function that takes 1 parameter:
+    // the square size
+    // and draws a square of that size to the center of the canvas.
     // draw 3 squares with that function.
     // avoid code duplication.
-    int x = 100;
-    int y = 100;
+    int squaresSize = 200;
 
-    squareDrawingFunction(x, y ,graphics );
+    squareDrawingFunction(squaresSize,graphics );
 
   }
 
-  public static void squareDrawingFunction(int x, int y, Graphics graphics) {
+  public static void squareDrawingFunction(int squaresSize, Graphics graphics) {
     int z = -50;
+    int squaresWidth = squaresSize/4;
+    int squaresHeight = squaresSize/4;
     for (int i = 0; i < 3; i++){
       z += 50;
-        graphics.fillRect(x+z, y+z, 50, 50);
+      graphics.fillRect((WIDTH/2)-(squaresWidth/2)+z, (HEIGHT/2)-(squaresHeight/2)+z, squaresWidth, squaresHeight);
 
 
-  }}
+    }
+  }
 
   //    Don't touch the code below
   static int WIDTH = 320;
@@ -42,8 +43,7 @@ public class PositionSquare {
     jFrame.setLocationRelativeTo(null);
     jFrame.setVisible(true);
   }
-
-  static class ImagePanel extends JPanel {
+  static class ImagePanel extends JPanel{
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
