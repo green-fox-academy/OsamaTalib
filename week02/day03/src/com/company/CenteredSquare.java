@@ -5,20 +5,12 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class HorizontalLines {
+public class CenteredSquare {
+
   public static void mainDraw(Graphics graphics) {
-    // Create a line drawing function that takes 2 parameters:
-    // The x and y coordinates of the line's starting point
-    // and draws a 50 long horizontal line from that point.
-    // Draw 3 lines with that function. Use loop for that.
-    int x =0;
-    for (int i =0; i < 3 ; i++) {
-
-      graphics.setColor(Color.magenta);
-      x +=50;
-      graphics.drawLine(0, 0, 0+x, 0);
-    }
-
+    // Draw a green 10x10 square to the canvas' center.
+graphics.setColor(Color.green);
+graphics.fillRect(WIDTH/2-5,HEIGHT/2-5,10,10);
 
   }
 
@@ -40,6 +32,7 @@ public class HorizontalLines {
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
       mainDraw(graphics);
+
     }
   }
 }

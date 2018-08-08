@@ -12,9 +12,9 @@ public class Main {
     // draw a red horizontal line to the canvas' middle.
     // draw a green vertical line to the canvas' middle.
     graphics.setColor(Color.red);
-    graphics.drawLine(0, 350, 700, 350);
+    graphics.drawLine(0, HEIGHT/2, WIDTH/2, HEIGHT/2);
     graphics.setColor(Color.green);
-    graphics.drawLine(700, 0, 700, 350);
+    graphics.drawLine(WIDTH/2, 0, WIDTH/2, HEIGHT/2);
 
 
   }

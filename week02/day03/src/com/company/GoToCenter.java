@@ -14,9 +14,9 @@ public class GoToCenter {
     int x =0;
     for (int i =0; i < 3 ; i++) {
 
-      graphics.setColor(Color.magenta);
-      x +=50;
-      graphics.drawLine(0+x, 0-x, 320, 343);
+      graphics.setColor(Color.BLACK);
+      x +=2;
+      graphics.drawLine(0, 0, WIDTH/(8-x), HEIGHT/(8-x));
     }
 
 
