@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,11 +47,16 @@
         <option value="$PROJECT_DIR$/src/com/company/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/com/company/DrawTriangle.java" />
         <option value="$PROJECT_DIR$/src/com/company/Cuboid.java" />
-        <option value="$PROJECT_DIR$/src/com/company/AnimalsAndLegs.java" />
         <option value="$PROJECT_DIR$/src/com/company/GuessTheNumber.java" />
         <option value="$PROJECT_DIR$/src/com/company/Arpi.java" />
         <option value="$PROJECT_DIR$/src/com/company/DrawChessTable.java" />
         <option value="$PROJECT_DIR$/src/com/company/DrawDiagonal.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AnimalsAndLegs.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AverageOfInput.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PrintBigger.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ConditionalVariableMutation.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DrawPyramid.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DrawDiamond.java" />
       </list>
     </option>
   </component>
@@ -75,7 +80,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,12 +102,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../week02/day01" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -120,9 +126,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DrawDiagonal">
-    <configuration name="Arpi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Arpi" />
+  <component name="RunManager" selected="Application.DrawDiamond">
+    <configuration name="AnimalsAndLegs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.AnimalsAndLegs" />
       <module name="day04" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +137,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Cuboid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Cuboid" />
+    <configuration name="AverageOfInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.AverageOfInput" />
       <module name="day04" />
       <extension name="coverage">
         <pattern>
@@ -141,8 +147,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="DrawChessTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.DrawChessTable" />
+    <configuration name="ConditionalVariableMutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.ConditionalVariableMutation" />
       <module name="day04" />
       <extension name="coverage">
         <pattern>
@@ -151,8 +157,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="DrawDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.DrawDiagonal" />
+    <configuration name="DrawDiamond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.DrawDiamond" />
       <module name="day04" />
       <extension name="coverage">
         <pattern>
@@ -161,8 +167,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="DrawTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.DrawTriangle" />
+    <configuration name="DrawPyramid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.DrawPyramid" />
       <module name="day04" />
       <extension name="coverage">
         <pattern>
@@ -187,19 +193,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="Application.DrawTriangle" />
-      <item itemvalue="Application.Cuboid" />
-      <item itemvalue="Application.Arpi" />
-      <item itemvalue="Application.DrawChessTable" />
-      <item itemvalue="Application.DrawDiagonal" />
+      <item itemvalue="Application.AnimalsAndLegs" />
+      <item itemvalue="Application.AverageOfInput" />
+      <item itemvalue="Application.ConditionalVariableMutation" />
+      <item itemvalue="Application.DrawPyramid" />
+      <item itemvalue="Application.DrawDiamond" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DrawDiagonal" />
-        <item itemvalue="Application.DrawChessTable" />
-        <item itemvalue="Application.Arpi" />
-        <item itemvalue="Application.Cuboid" />
-        <item itemvalue="Application.DrawTriangle" />
+        <item itemvalue="Application.DrawDiamond" />
+        <item itemvalue="Application.DrawPyramid" />
+        <item itemvalue="Application.ConditionalVariableMutation" />
+        <item itemvalue="Application.AverageOfInput" />
+        <item itemvalue="Application.AnimalsAndLegs" />
       </list>
     </recent_temporary>
   </component>
@@ -221,17 +227,19 @@
       <workItem from="1533508169402" duration="4156000" />
       <workItem from="1533514385478" duration="1354000" />
       <workItem from="1533541095224" duration="705000" />
+      <workItem from="1533816574281" duration="5915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41745000" />
+    <option name="totallyTimeSpent" value="47660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.3290938" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -257,7 +265,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.3290938" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/AnimalsAndLegs.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Arpi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -508,6 +514,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AnimalsAndLegs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AverageOfInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PrintBigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ConditionalVariableMutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DrawPyramid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DrawDiamond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
