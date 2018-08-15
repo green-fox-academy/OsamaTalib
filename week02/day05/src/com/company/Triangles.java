@@ -6,17 +6,25 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Main {
+public class Triangles {
   public static void mainDraw(Graphics graphics) {
     // Fill the canvas with a checkerboard pattern.
-    graphics.setColor(Color.magenta);
-    int x = 0;
-    for (int i = 0; i < 13; i++) {
-      graphics.setColor(Color.magenta);
-      graphics.drawLine(30 + x, 5, 280, 20 + x);
-      graphics.setColor(Color.green);
-      graphics.drawLine(5, 30 + x, 20 + x, 280);
-      x += 20;
+int x = 0;
+int y = 0;
+int z = 0;
+
+    for (int i = 0; i < 23; i++) {
+graphics.drawLine(160+x,y,z,300);
+graphics.drawLine(153-x,14+y,167+x,14+y);
+graphics.drawLine(160-x,y,321-z,300);
+
+x+=7;
+y+=13;
+z+=14;
+
+
+
+
     }
   }
 
@@ -41,3 +49,4 @@ public class Main {
     }
   }
 }
+

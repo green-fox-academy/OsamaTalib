@@ -6,17 +6,18 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Main {
+public class EnvelopeStar {
   public static void mainDraw(Graphics graphics) {
     // Fill the canvas with a checkerboard pattern.
     graphics.setColor(Color.magenta);
     int x = 0;
     for (int i = 0; i < 13; i++) {
-      graphics.setColor(Color.magenta);
-      graphics.drawLine(30 + x, 5, 280, 20 + x);
-      graphics.setColor(Color.green);
-      graphics.drawLine(5, 30 + x, 20 + x, 280);
-      x += 20;
+
+      graphics.drawLine(160, 5 + x, 160+x, 160 );
+      graphics.drawLine(160, 5 + x, 160 - x, 160);
+      graphics.drawLine(160, 300 - x, 160+x, 160 );
+      graphics.drawLine(160, 300 - x, 160 - x, 160);
+      x += 12;
     }
   }
 
