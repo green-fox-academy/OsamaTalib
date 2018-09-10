@@ -1,0 +1,28 @@
+package com.company;
+import static org.junit.Assert.*;
+
+
+import org.junit.Test;
+
+public class TrickyAverageTest {
+  /**
+   * Write your test cases here. You should be able to invoke the method like this:
+   * double result = TrickyAverage.getTrickyAvg(input);
+   */
+
+  @Test
+  public void getTrickyAvg_testCase1() {
+
+    int[] arrayOfIntegers={1,2,3};
+    assertEquals((double)1.5,Main.getTrickyAvg(arrayOfIntegers),0.1);
+  }
+
+  @Test
+  public void getTrickyAvg_testCase2() {
+   
+int[] arrayOfIntegers={4,5,6};
+    assertEquals((double)5,Main.getTrickyAvg(arrayOfIntegers),0.1);
+    
+  }
+
+}
