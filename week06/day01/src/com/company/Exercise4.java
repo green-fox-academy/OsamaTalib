@@ -11,8 +11,7 @@ public class Exercise4 {
 
     ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(3, 9, 2, 8, 6, 5));
     List<Integer> squaredValue = numbers.stream()
-        .map(n -> n * n)
-        .filter(n -> n > 20)
+        .filter(n -> n*n > 20)
         .collect(Collectors.toList());
     System.out.println(squaredValue);
   }
