@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Stile2.css">
+  <title>Document</title>
+</head>
+<body>
+    <form action="success.html" method="POST">
+      <p id="title">ACCOUNT LOGIN</p>
+      <div>
+        <label for="name">USERNAME</label>
+        <input type="text" id="name" name="user_name" minlength="3" required autofocus>
+      </div>
+      <div>
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="user_password" minlength="8" required>
+        <input type="checkbox" onclick="myFunction()">
+        <p id= "showhide">Show/hide</p>
+        <script src="login.js"></script>
+      </div>
+      <p id="forgot"><a href="forgot.html">Forgot Password?</a></p>
+      <div class="button">
+        <button type="submit">Login</button>
+      </div>
+</body>
+</html>

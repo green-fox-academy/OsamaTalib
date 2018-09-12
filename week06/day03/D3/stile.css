@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+  width: 50%;
+  height: 100%;
+  border: 20px solid rgb(0, 140, 255);
+}
+
+th {
+  text-align: midle;
+  padding: 8px;
+  border: 1px solid rgb(192, 174, 174)
+}
+td {
+  text-align: midle;
+  padding: 8px;
+  border: 1px solid rgb(192, 174, 174)
+}
+
+tr:nth-child(odd){
+  background-color: #f2f2f2
+}
+
+th {
+  background-color:rgb(7, 7, 7);
+  color: white;
+}
+
