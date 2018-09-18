@@ -1,0 +1,84 @@
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>BankAccount</title>
+    <style>
+        body {
+            background-color: rgb(102, 102, 240);
+        }
+        table,
+        td,
+        th {
+            width: 1200px;
+            height: 80px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            text-align:center;
+        }
+        td, th {
+            border: 2px solid rgb(172, 171, 171);
+            padding: 0 20px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border-style: hidden;
+        }
+        th {
+            background-color: rgb(26, 25, 25);
+            color: rgb(196, 194, 194);
+        }
+        td {
+            color: rgb(126, 124, 124);
+        }
+        tr:nth-child(2n+1) {
+            background-color: rgb(231, 231, 231);
+        }
+        tr:nth-child(2n) {
+            background-color: white;
+        }
+        table th:first-child {
+            border-radius: 5px 0 0 0;
+        }
+        table th:last-child {
+            border-radius: 0 5px 0 0;
+        }
+        table tr:last-child td:first-child {
+            border-radius: 0 0 0 5px;
+        }
+        table tr:last-child td:last-child {
+            border-radius: 0 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>BankAccount</h1>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>index</th>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>AnimalType</th>
+            <th>Is A King</th>
+            <th>Is Bad Or good</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="newBankAccount : ${Bank}">
+            <td th:text="*{newBankAccount.id}"></td>
+            <td th:text="*{newBankAccount.name}"></td>
+            <td th:text="*{newBankAccount.balance}"></td>
+            <td th:text="*{newBankAccount.animalType}"></td>
+            <td th:text="*{newBankAccount.isItKing()}? 'I am a KING!' : 'I am not a King'"
+                th:style="*{newBankAccount.isItKing()}? 'background-color: orange' : 'background-color: white'"></td>
+            <td th:text="*{newBankAccount.isItGoodGuy()}? 'Good guy' : 'Bad guy'"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

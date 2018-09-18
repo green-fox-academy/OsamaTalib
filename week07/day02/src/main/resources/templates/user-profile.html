@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>User profile</title>
+</head>
+<body>
+<h1 th:text="${user.name} + '\'s profile'"></h1>
+<div>
+    <ul>
+        <li th:each="animal : ${user.animals}" th:text="${animal.name}"></li>
+    </ul>
+</div>
+</body>
+</html>

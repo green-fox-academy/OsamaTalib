@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${shelter.name} + '\'s profile'"></title>
+</head>
+<body>
+<h1 th:text="${shelter.name} + '\'s profile'"></h1>
+<div>
+    <h2>Animals in the shelter:</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Age</th>
+            <th>Adoptation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="animal : ${shelter.animals}" th:object="${animal}">
+            <td th:text="*{name}"></td>
+            <td th:text="*{color}"></td>
+            <td th:text="*{age}"></td>
+            <td>
+                <form action="#" th:action="@{'/shelters/' + ${shelter.id} + '/adopt'}" method="post">
+                    <input type="hidden" value="13" name="user-id" />
+                    <input type="hidden" th:value="*{id}" name="animal-id" />
+                    <input type="submit" value="Adopt" />
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <h2>Add new animal</h2>
+    <form th:object="${newAnimal}" action="#" th:action="@{'/shelters/' + ${shelter.id}}" method="post">
+        <div>
+            <label for="animal-name">Name:</label>
+            <input type="text" id="animal-name" th:field="*{name}" />
+        </div>
+        <div>
+            <label for="animal-color">Color:</label>
+            <input type="text" id="animal-color" th:field="*{color}" />
+        </div>
+        <div>
+            <label for="animal-age">Age:</label>
+            <input type="text" id="animal-age" th:field="*{age}" />
+        </div>
+        <div>
+            <input type="submit" th:value="Add" />
+        </div>
+    </form>
+</div>
+</body>
+</html>
