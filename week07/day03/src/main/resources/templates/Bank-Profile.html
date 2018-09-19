@@ -76,6 +76,22 @@
                 th:style="*{newBankAccount.isItKing()}? 'background-color: orange' : 'background-color: white'"></td>
             <td th:text="*{newBankAccount.isItGoodGuy()}? 'Good guy' : 'Bad guy'"></td>
         </tr>
+        <br>
+        <br>
+        <form action="#" method="POST">
+            <p id="title">DONATION FORM</p>
+            <div>
+                <label for="name">NAME OF CHARACTER</label>
+                <input type="text" id="name" name="character_name" required>
+            </div>
+            <div>
+                <label for="number">SUM OF ZEBRAAAAAH</label>
+                <input type="number" id="number" name="donate" required>
+            </div>
+            <div class="button">
+                <button type="submit">DONATE</button>
+            </div>
+        </form>
         </tbody>
     </table>
 </div>

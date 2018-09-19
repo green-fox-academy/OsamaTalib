@@ -7,6 +7,7 @@ public class BankAccount {
 
   String name;
   String balance;
+  int aIntBalance;
   String animalType;
   long id = 1;
   static AtomicLong incrementedId = new AtomicLong(0);
@@ -19,6 +20,7 @@ public class BankAccount {
   public BankAccount(String name, int balance, String animalType, boolean isItKing, boolean isItGoodGuy) {
     this.name = name;
     this.balance = String.format("%.2f", (float) balance) + " zebra";
+    this.aIntBalance=balance;
     this.animalType = animalType;
     this.id = incrementedId.incrementAndGet();
     this.isItKing = isItKing;
@@ -72,5 +74,13 @@ public class BankAccount {
 
   public void setAnimalType(String animalType) {
     this.animalType = animalType;
+  }
+
+  public int getaIntBalance() {
+    return aIntBalance;
+  }
+
+  public void setaIntBalance(int aIntBalance) {
+    this.aIntBalance = aIntBalance;
   }
 }
