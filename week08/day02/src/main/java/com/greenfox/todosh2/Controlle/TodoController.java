@@ -19,7 +19,7 @@ public class TodoController {
 
   @GetMapping(value = {"/", "/list"})
   public String list(Model model) {
-    model.addAllAttributes("todos",repositoryTodo.findAll());
+    model.addAttribute("todos",repositoryTodo.findAll());
     return "todoslist";
   }
 }
