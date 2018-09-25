@@ -23,7 +23,7 @@ public class Todosh2Application implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    repositoryTodo.save(new Todo("eat" , false, false));
+    repositoryTodo.save(new Todo("eat" , false, true));
     repositoryTodo.save(new Todo("drink",true,false));
     repositoryTodo.save(new Todo("smoke" , true, false));
     repositoryTodo.save(new Todo("read" , true, false));
