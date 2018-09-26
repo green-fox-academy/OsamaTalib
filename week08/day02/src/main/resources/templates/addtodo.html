@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Add new TODO</h1>
+<form th:object="${todo}" method="post">
+    <p>Title: <input type="text" th:field="*{title}" /></p>
+    <p>Is Urgent: <input type="text" th:field="*{urgent}" /></p>
+    <p>Is Done: <input type="text" th:field="*{done}" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+</body>
+</html>
